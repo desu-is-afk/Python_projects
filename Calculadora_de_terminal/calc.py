@@ -2,11 +2,12 @@
 
 while True:
     try:
-        equacao = input('Escreva uma equação básica:\n>>> ')
+        equacao = input('Write a simple math expression:\n>>> ')
         if equacao.lower() in ["exit", "break", "quit"]:
             print("Shutting Down...")
             break
         else:
+            print("Result:")
             result = eval(equacao)
             print(result)
     except KeyboardInterrupt:
